@@ -5,11 +5,11 @@ public class Temperatura {
     public double celsiusToFarenheit(double c) {
         final int i = +32;
         farenheit = (1.8 * c) + i;
-        return farenheit;
+        return c;
     }
     public double farenheitToCelsius(double f) {
         final double i = 1.8;
         celsius = (f - 32) / i;
-        return celsius;
+        return f;
     }
 }
