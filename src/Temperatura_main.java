@@ -4,8 +4,9 @@ public class Temperatura_main {
         Temperatura temp = new Temperatura();
         String tipo_temp;
 
-        //System.out.println("¿Celsius o Farenheit?");
-        //tipo_temp = System.console().readLine();
+        System.out.println("¿Celsius o Farenheit?");
+        String s = ;
+        tipo_temp = System.console().readLine(s);
         //System.out.println("Temperatura de entrada en " + tipo_temp);
         //System.out.println("Introduzca la temperatura: ");
         //double grados = Double.parseDouble(System.console().readLine());
