@@ -1,13 +1,21 @@
-public class Temperatura {
-    //Clase "Temperatura"
-    public double celsiusToFarenheit(double grados) {
-        final int i = 32;
-        double c = (1.8 * grados) + i;
-        return c;
+class Temperatura {
+    private double tempF, tempC;
+
+    public void setFarenheit(double f) {
+        tempF = f;
     }
-    public double farenheitToCelsius(double grados) {
-        final double i = 1.8;
-        double f = (grados - 32) / i;
-        return f;
+
+    public void setCelsius(double c) {
+        tempC = c;
+    }
+
+    // Convierte de grados C a grados F
+    public double celsiusToFarenheit() {
+        return (1.8*tempC)+32;
+    }
+
+    // Convierte de grados F a grados C
+    public double farenheitToCelsius() {
+        return (tempF-32)/1.8;
     }
 }
