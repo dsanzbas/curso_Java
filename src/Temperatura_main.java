@@ -2,7 +2,6 @@ import java.io.*;
 public class Temperatura_main {
     public static void main (String[] args) {
         Temperatura temp = new Temperatura();
-        double grados;
 
         System.out.println("¿Celsius o Farenheit?");
         String  tipo_temp = System.console().readLine();
