@@ -1,4 +1,5 @@
 public class Temperatura {
+    //Clase "Temperatura"
     public double celsiusToFarenheit(double grados) {
         final int i = 32;
         double c = (1.8 * grados) + i;
