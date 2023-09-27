@@ -5,7 +5,7 @@ public class Temperatura_main {
         String tipo_temp;
 
         System.out.println("¿Celsius o Farenheit?");
-        String s;
+        String s = "";
         tipo_temp = System.console().readLine(s);
         //System.out.println("Temperatura de entrada en " + tipo_temp);
         //System.out.println("Introduzca la temperatura: ");
