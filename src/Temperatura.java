@@ -1,10 +1,10 @@
 public class Temperatura {
-    private double grados;
+    double grados;
     double f;
     double c;
 
     public double celsiusToFarenheit(double grados) {
-        final int i = +32;
+        final int i = 32;
         c = (1.8 * grados) + i;
         return c;
     }
