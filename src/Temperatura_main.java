@@ -8,7 +8,7 @@ class Temperatura_main
         convTemp.setCelsius(100);
         convTemp.setFarenheit(212);
 
-        System.out.println(convTemp.setCelsius(); + " grados Celsius son " + convTemp.celsiusToFarenheit() + " grados Farenheit");
-        System.out.println(f + " grados Farenheit son " + convTemp.farenheitToCelsius() + " grados Celsius");
+        System.out.println(convTemp.getCelsius() + " grados Celsius son " + convTemp.celsiusToFarenheit() + " grados Farenheit");
+        System.out.println(convTemp.getFarenheit() + " grados Farenheit son " + convTemp.farenheitToCelsius() + " grados Celsius");
     }
 }
