@@ -4,11 +4,15 @@ class Temperatura {
     public void setFarenheit(double f) {
         tempF = f;
     }
-
+    public double getFarenheit() {
+        return tempF;
+    }
     public void setCelsius(double c) {
         tempC = c;
     }
-
+    public double getCelsius() {
+        return tempC;
+    }
     // Convierte de grados C a grados F
     public double celsiusToFarenheit() {
         return (1.8*tempC)+32;
