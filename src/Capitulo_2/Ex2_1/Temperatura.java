@@ -1,3 +1,5 @@
+package Capitulo_2.Ex2_1;
+
 class Temperatura {
     private double tempF, tempC;
 
