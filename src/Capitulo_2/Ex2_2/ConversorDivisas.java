@@ -5,7 +5,6 @@ class ConversorDivisas {
     double cambio;
     double imp_libras;
     double imp_euros;
-    double  cambio;
     ConversorDivisas() {
         tipo_cambio = 0.85;
     }
