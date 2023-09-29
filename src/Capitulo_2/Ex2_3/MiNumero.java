@@ -4,7 +4,7 @@ public class MiNumero {
     private int mn;
 
     MiNumero () {mn = 0;}
-    MiNumero (int num) {mn = num};
+    MiNumero (int num) {mn = num;}
 
     public void cambiaNumero (int nuevo_num) {mn = nuevo_num;}
     public void suma         (int suma_num)  {mn = mn + suma_num;}
