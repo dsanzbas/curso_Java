@@ -5,24 +5,19 @@ class ConversorDivisas {
     double cambio;
     double imp_libras;
     double imp_euros;
+    //Constructor Divisas 1
     ConversorDivisas() {
         tipo_cambio = 0.85;
     }
+    //Constructor Divisas 2
     ConversorDivisas(double tc) {
         tipo_cambio = tc;
     }
-    public void setLibras(double lb) {
-        imp_libras = lb;
+
+    public double getTipo_cambio() {
+        return tipo_cambio;
     }
-    public double getLibras() {
-        return imp_libras;
-    }
-    public void setEuros(double eu) {
-        imp_libras = eu;
-    }
-    public double getEuros() {
-        return imp_euros;
-    }
+
     public double librasToEuros (double imp_libras) {
         cambio = imp_libras * tipo_cambio;
         return cambio;
