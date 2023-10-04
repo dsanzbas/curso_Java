@@ -6,7 +6,7 @@ class Resta_main
 {
     public static void main(String[] args) {
         Resta resta = new Resta();
-        int num = 0;
+        int num;
         int valor1, valor2;
 
         Scanner scanner = new Scanner(System.in);
