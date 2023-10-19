@@ -4,10 +4,12 @@ public class Animal implements Cloneable {
 
     String nombre;
     int edad;
+    private static int numAnimales = 0;
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
+        numAnimales ++;
     }
 
     public String getNombre() {
@@ -25,9 +27,9 @@ public class Animal implements Cloneable {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    @Override
+    public Animal clone() throws CloneNotSupportedException {
+        return (Animal) super.clone();
     }
 
     @Override

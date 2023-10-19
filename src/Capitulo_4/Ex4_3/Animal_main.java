@@ -10,9 +10,20 @@ public class Animal_main {
         System.out.println("Animal a1 = " + a1);
 
         try {
-            Animal a2 = (Animal) a1.clone();
-            System.out.println("Animal a2 = " + a2);
+            Animal a2 = a1.clone();
+
+            if (a1.equals(a2)) {
+               System.out.println("a1 == a2");
+               System.out.println("a1 = " + a1);
+               System.out.println("a2 = " + a2);
+            }
+            else {
+              System.out.println("a1 != a2");
+              System.out.println("a1 = " + a1);
+              System.out.println("a2 = " + a2);
+            }
         }
+
         catch (Exception e) {
 
         }
