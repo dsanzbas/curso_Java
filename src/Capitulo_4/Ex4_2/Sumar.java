@@ -1,6 +1,8 @@
 package Capitulo_4.Ex4_2;
 
-public class Sumar {
+public class Sumar extends Operaciones{
+
+    Operaciones o = new Sumar();
 
     public int metodoSumar(int int1, int int2) {
         int resultado;

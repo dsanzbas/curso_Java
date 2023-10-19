@@ -5,6 +5,7 @@ public class Operaciones {
         int i1,i2,result2;
         double d1,d2,result1;
         Sumar s = new Sumar();
+        Operaciones o = s;
 
         result2 = s.metodoSumar(1,2);
         System.out.println("Resultado = " + result2);
