@@ -7,11 +7,17 @@ public class Animal implements Cloneable {
     public static int numAnimales = 0;
     private Animal animal;
 
+    // Constructor por defecto
+    public Animal() {
+    }
+
+    // Constructor copia
     public Animal(Animal a) {
         this.nombre = a.getNombre();
         this.edad   = a.getEdad();
     }
 
+    // Constructor con parámetros formales de entrada
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
