@@ -2,9 +2,15 @@ package Capitulo_4.Ex4_3;
 
 public class Animal implements Cloneable {
 
-    String nombre;
-    int edad;
-    private static int numAnimales = 0;
+    protected String nombre;
+    protected int edad;
+    public static int numAnimales = 0;
+    private Animal animal;
+
+    public Animal(Animal a) {
+        this.nombre = a.getNombre();
+        this.edad   = a.getEdad();
+    }
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
@@ -27,9 +33,23 @@ public class Animal implements Cloneable {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
     @Override
-    public Animal clone() throws CloneNotSupportedException {
-        return (Animal) super.clone();
+    public Animal clone() {
+        Animal a = new Animal(this.nombre, this.edad);
+        return a;
+    }
+
+    public boolean equals(Animal a) {
+
+        boolean result = false;
+
+        if (a.getEdad() == this.edad && this.nombre.equals(a.getNombre()))
+        {
+            result = true;
+        }
+
+        return result;
     }
 
     @Override
