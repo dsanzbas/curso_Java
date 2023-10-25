@@ -1,4 +1,4 @@
-package Capitulo_4.Ex_11;
+package Capitulo_4.Ex4_11;
 
 import java.util.Scanner;
 
