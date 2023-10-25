@@ -1,4 +1,4 @@
-package Capitulo_4.Colores;
+package Capitulo_4.Ex_10;
 
 public class Color {
     public static void main(String[] args) {
