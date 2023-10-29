@@ -1,4 +1,4 @@
-package Capitulo_5.Ex_3;
+package Capitulo_5.Ex5_3;
 import java.util.*;
 public class Loteria {
 
