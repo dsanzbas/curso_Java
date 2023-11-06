@@ -77,7 +77,7 @@ public class Array_Creciente {
                 }
             }
             
-            for(h=i+1; h < arrayList.size(); h++){
+            for(h=i+1; h < (arrayList.size() - 1); h++){
                 arrayList.add(h,arrayAux.get(h-1));
             }
             
