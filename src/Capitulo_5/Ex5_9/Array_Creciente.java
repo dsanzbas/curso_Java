@@ -11,8 +11,8 @@ public class Array_Creciente {
 
         ArrayList<Integer> arrayList = new ArrayList<>(10);
         int i, h, aux, mayor;
-        boolean encontrado;
-        String respuesta;
+        boolean encontrado, output_ok = true;
+        String respuesta = "";
         int input = 0;
         ArrayList input_ok = new ArrayList<>(2);
         Scanner scanner = new Scanner(in);
@@ -25,7 +25,6 @@ public class Array_Creciente {
         }
         //Mostrar contenido arrayList sin ordernar
         for (i = 0; i < arrayList.size(); i++) {
-
             out.println("Contenido ArrayList: " + arrayList.get(i));
         }
 
@@ -39,18 +38,24 @@ public class Array_Creciente {
             out.println("Introduzca nuevo valor: ");
 
             try {
-                input = scanner.nextInt();
-                //input = 100;
+                //input = scanner.nextInt();
+                input = 120;
                 input_ok = GetInput.validateInput(input);
-                if (!input_ok) {contador++;}
+                output_ok = (boolean) input_ok.get(0);
+                respuesta = (String) input_ok.get(1);
+
+                if (!output_ok) {
+                    contador++;
+                    out.println(respuesta);
+                }
             } catch (InputMismatchException e) {
                 out.println("Formato numérico incorrecto");
                 scanner.next();
             }
-        } while ((!input_ok) && (contador < 3));
+        } while ((!output_ok) && (contador < 3));
 
         if (contador == 3) {
-            out.println("Fin del programa");
+            out.println("Fin del programa " + respuesta);
             System.exit(1);
         }
 

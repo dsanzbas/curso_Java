@@ -1,26 +1,26 @@
 package Capitulo_5.Ex5_9;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-import static java.lang.System.out;
 
 public class GetInput {
-    int input;
+    @org.jetbrains.annotations.NotNull
     public static ArrayList validateInput(int input) {
-        ArrayList input_ok = false;
+        ArrayList<Object> output = new ArrayList<Object>(2);
+        boolean input_ok = false;
         String respuesta;
+        respuesta = "";
 
         try {
              GetInput.rango(input);
              input_ok = true;
+             output.add(0,input_ok);
+             output.add(1,respuesta);
         } catch (ExcepcionIntervalo x) {
             respuesta = x.getMessage();
-            input_ok = false;
+            output.add(0,input_ok);
+            output.add(1,respuesta);
         }
-
-        return input_ok;
+        return output;
     }
     public static void rango(int num) throws ExcepcionIntervalo {
         if ((num > 100) || (num < 0)) {
