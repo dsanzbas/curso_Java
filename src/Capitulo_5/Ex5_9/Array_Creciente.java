@@ -73,12 +73,14 @@ public class Array_Creciente {
             for(i = 0; i < arrayList.size(); i++) {
                 if (arrayList.get(i) > input) {
                     arrayList.add(i,input);
-                    for(h=i; h < arrayList.size(); h++){
-                        arrayList.add(h,arrayAux.get(h));
-                    }
                     break;
                 }
             }
+            
+            for(h=i+1; h < arrayList.size(); h++){
+                arrayList.add(h,arrayAux.get(h-1));
+            }
+            
             out.printf("Contenido ArrayList Final: " + arrayList.toString());
         }
     }

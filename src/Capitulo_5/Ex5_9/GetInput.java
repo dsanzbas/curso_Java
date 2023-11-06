@@ -3,7 +3,6 @@ package Capitulo_5.Ex5_9;
 import java.util.ArrayList;
 
 public class GetInput {
-    @org.jetbrains.annotations.NotNull
     public static ArrayList validateInput(int input) {
         ArrayList<Object> output = new ArrayList<Object>(2);
         boolean input_ok = false;
