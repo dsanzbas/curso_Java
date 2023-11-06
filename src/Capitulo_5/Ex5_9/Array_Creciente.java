@@ -11,10 +11,10 @@ public class Array_Creciente {
 
         ArrayList<Integer> arrayList = new ArrayList<>(10);
         int i, h, aux, mayor;
-        boolean encontrado = false;
+        boolean encontrado;
         String respuesta;
         int input = 0;
-        boolean input_ok = false;
+        ArrayList input_ok = new ArrayList<>(2);
         Scanner scanner = new Scanner(in);
         int contador = 0;
 
@@ -37,16 +37,17 @@ public class Array_Creciente {
         }
         do {
             out.println("Introduzca nuevo valor: ");
-            input = scanner.nextInt();
 
             try {
                 input = scanner.nextInt();
+                //input = 100;
                 input_ok = GetInput.validateInput(input);
+                if (!input_ok) {contador++;}
             } catch (InputMismatchException e) {
                 out.println("Formato numérico incorrecto");
                 scanner.next();
             }
-        } while ((!input_ok) || (contador < 3));
+        } while ((!input_ok) && (contador < 3));
 
         if (contador == 3) {
             out.println("Fin del programa");
@@ -63,8 +64,7 @@ public class Array_Creciente {
         }
 
         if (encontrado) {
-            out.println("Array secuencial - Valor encontrado en la posición " + i);
-            out.println("ArrayList        - Valor encontrado en la posición " + aux);
+            out.println("ArrayList - Valor encontrado en la posición " + aux);
         } else {
             out.println("Valor no encontrado");
         }
