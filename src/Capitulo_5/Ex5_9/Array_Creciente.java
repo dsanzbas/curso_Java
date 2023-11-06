@@ -9,7 +9,8 @@ public class Array_Creciente {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> arrayList = new ArrayList<>(10);
+        ArrayList<Integer> arrayList = new ArrayList<Integer>(10);
+
         int i, h, aux, mayor;
         boolean encontrado, output_ok = true;
         String respuesta = "";
@@ -24,22 +25,18 @@ public class Array_Creciente {
             arrayList.add(i, ((int) (Math.random() * 100) + 1));
         }
         //Mostrar contenido arrayList sin ordernar
-        for (i = 0; i < arrayList.size(); i++) {
-            out.println("Contenido ArrayList: " + arrayList.get(i));
-        }
+        out.println("Contenido ArrayList: " + arrayList.toString());
 
         Collections.sort(arrayList);
 
-        for (i = 0; i < arrayList.size(); i++) {
+        out.println("Contenido ArrayList Ordenado: " + arrayList.toString());
 
-            out.println("Contenido ArrayList Ordenado: " + arrayList.get(i));
-        }
         do {
             out.println("Introduzca nuevo valor: ");
 
             try {
-                //input = scanner.nextInt();
-                input = 120;
+                input = scanner.nextInt();
+                //input = 120;
                 input_ok = GetInput.validateInput(input);
                 output_ok = (boolean) input_ok.get(0);
                 respuesta = (String) input_ok.get(1);
@@ -72,6 +69,17 @@ public class Array_Creciente {
             out.println("ArrayList - Valor encontrado en la posición " + aux);
         } else {
             out.println("Valor no encontrado");
+            ArrayList<Integer> arrayAux  = new ArrayList<Integer>(arrayList);
+            for(i = 0; i < arrayList.size(); i++) {
+                if (arrayList.get(i) > input) {
+                    arrayList.add(i,input);
+                    for(h=i; h < arrayList.size(); h++){
+                        arrayList.add(h,arrayAux.get(h));
+                    }
+                    break;
+                }
+            }
+            out.printf("Contenido ArrayList Final: " + arrayList.toString());
         }
     }
 }
