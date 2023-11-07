@@ -70,18 +70,17 @@ public class Array_Creciente {
         } else {
             out.println("Valor no encontrado");
             ArrayList<Integer> arrayAux  = new ArrayList<Integer>(arrayList);
-            for(i = 0; i < arrayList.size(); i++) {
+            for(i = 0; i < (arrayList.size() - 1); i++) {
                 if (arrayList.get(i) > input) {
-                    arrayList.add(i,input);
+                    arrayList.set(i,input);
                     break;
                 }
             }
             
-            for(h=i+1; h < (arrayList.size() - 1); h++){
-                arrayList.add(h,arrayAux.get(h-1));
+            for(h=i+1; h < arrayList.size(); h++){
+                arrayList.set(h,arrayAux.get(h-1));
             }
-            
-            out.printf("Contenido ArrayList Final: " + arrayList.toString());
+            out.println("Contenido ArrayList Final: " + arrayList.toString());
         }
     }
 }
