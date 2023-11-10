@@ -16,28 +16,34 @@ public class Array_Suma_Gigante {
 
         //Rellenar Arrays con números entre 0 y 10 aleatoriamente
 
-        for (i = 0; i < 9; i++) {
+        for (i = 0; i <= 9; i++) {
             a1[i] = (int) (Math.random() * 10) + 1;
         }
 
-        for (i = 0; i < 9; i++) {
+        for (i = 0; i <= 9; i++) {
             a2[i] = (int) (Math.random() * 10) + 1;
         }
 
         // Imprimir contenido original de los arrays
 
-        out.println("Array 1: " + Arrays.toString(a1));
-        out.println("Array 2: " + Arrays.toString(a2));
-
-        // Inizializar objeto
-        Sumar_Arrays suma = new Sumar_Arrays(a1,a2);
+        // Inizializar objetos
+        Sumar_Arrays  suma  = new Sumar_Arrays(a1,a2);
+        Restar_Arrays resta = new Restar_Arrays(a1, a2);
 
         // Sumar los arrays
         suma.sumar_arrays();
         resultado = suma.getSuma();
 
-        // Imprimir array resultante
-        out.println("Array 3: " + Arrays.toString(resultado));
+        // Imprimir arrays
+        out.println("Array 1    : " + Arrays.toString(a1));
+        out.println("Array 2    : " + Arrays.toString(a2));
+        out.println("Array Suma : " + Arrays.toString(resultado));
+
+        for(i=0; i < (resultado.length - 1); i++) {resultado[i] = 0;}
+
+        resta.restar_arrays();
+        resultado = resta.getResta();
+        out.println("Array Resta: " + Arrays.toString(resultado));
     }
 }
 
