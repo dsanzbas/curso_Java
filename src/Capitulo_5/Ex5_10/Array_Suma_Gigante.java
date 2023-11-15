@@ -17,11 +17,11 @@ public class Array_Suma_Gigante {
         //Rellenar Arrays con números entre 0 y 10 aleatoriamente
 
         for (i = 0; i <= 9; i++) {
-            a1[i] = (int) (Math.random() * 10) + 1;
+            a1[i] = (int) (Math.random() * 10);
         }
 
         for (i = 0; i <= 9; i++) {
-            a2[i] = (int) (Math.random() * 10) + 1;
+            a2[i] = (int) (Math.random() * 10);
         }
 
         // Imprimir contenido original de los arrays
