@@ -1,7 +1,7 @@
-package Capitulo_5.Ex5_10;
+package Capitulo_5.Ex5_10_11;
 
 import java.util.*;
-import static java.lang.System.in;
+
 import static java.lang.System.out;
 
 public class Array_Suma_Gigante {

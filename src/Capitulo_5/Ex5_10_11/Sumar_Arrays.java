@@ -1,4 +1,4 @@
-package Capitulo_5.Ex5_10;
+package Capitulo_5.Ex5_10_11;
 
 public class Sumar_Arrays {
     int[] a1 = new int[10];
