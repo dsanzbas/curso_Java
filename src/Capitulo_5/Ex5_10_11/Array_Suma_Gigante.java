@@ -11,6 +11,7 @@ public class Array_Suma_Gigante {
         int[] a1 = new int[10];
         int[] a2 = new int[10];
         int[] resultado = new int[10];
+        int[] resul_multi = new int[a1.length * 2];
         int i, h, aux, mayor;
         int contador = 0;
 
@@ -29,6 +30,7 @@ public class Array_Suma_Gigante {
         // Inizializar objetos
         Sumar_Arrays  suma  = new Sumar_Arrays(a1,a2);
         Restar_Arrays resta = new Restar_Arrays(a1, a2);
+        Multiplicar_Arrays multiplicar = new Multiplicar_Arrays(a1, a2);
 
         // Sumar los arrays
         suma.sumar_arrays();
@@ -44,6 +46,12 @@ public class Array_Suma_Gigante {
         resta.restar_arrays();
         resultado = resta.getResta();
         out.println("Array Resta: " + Arrays.toString(resultado));
+
+        for(i=0; i < (resul_multi.length - 1); i++) {resul_multi[i] = 0;}
+
+        multiplicar.multiplicar_arrays();
+        resul_multi = multiplicar.getMulti();
+        out.println("Array Multiplicar: " + Arrays.toString(resul_multi));
     }
 }
 
