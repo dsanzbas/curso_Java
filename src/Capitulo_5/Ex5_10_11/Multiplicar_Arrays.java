@@ -23,18 +23,17 @@ public class Multiplicar_Arrays {
         int i, multi, multiplica = 0;
         int[] dec_uni = new int[2];
         int[] pos_matriz = new int[2];
+        int fila = 0;
 
         for (i = (a1.length - 1); i >= 0; i--) {
             multiplica = 0;
 
             for (int j = (a1.length - 1); j >= 0; j-- ) {
                 multi = (a2[j] * a1[i]) + me_llevo;
+                me_llevo = 0;
+                dec_uni = decUni(multi);
+                me_llevo = dec_uni[0];
 
-                if (multi > 10) {
-                    me_llevo = 0;
-                    dec_uni = decUni(multi);
-                    me_llevo = dec_uni[0];
-                }
                 if (i == (a1.length - 1)) {
                     matriz(dec_uni[1], i, j);
                 } else {
