@@ -24,6 +24,7 @@ public class Multiplicar_Arrays {
         int[] dec_uni = new int[2];
         int[] pos_matriz = new int[2];
         int fila = 0;
+        int columna = 0;
 
         for (i = (a1.length - 1); i >= 0; i--) {
             multiplica = 0;
@@ -35,10 +36,10 @@ public class Multiplicar_Arrays {
                 me_llevo = dec_uni[0];
 
                 if (i == (a1.length - 1)) {
-                    matriz(dec_uni[1], i, j);
+                    matriz(dec_uni[1], i);
                 } else {
                     pos_matriz = posMatriz(i,j);
-                    matriz(dec_uni[1], pos_matriz[0], pos_matriz[1]);
+                    matriz(dec_uni[1], i);
                 }
             }
         }
@@ -63,14 +64,15 @@ public class Multiplicar_Arrays {
         return uniDec;
     }
     //Rellenar matriz
-    public void matriz (int i, int fila, int columna) {
-        resultado[fila][columna] = i;
+    public void matriz (int valor, int i) {
+        resultado[(a1.length - 1) - i][((a1.length - 1) * 2) - ((a1.length - 1) - i)] = valor;
     }
+
     //Determinar posición en la matriz
     public int[] posMatriz (int f, int c) {
         int[] posicion = new int[2];
-        posicion[0] = f;
-        posicion[1] = c - f;
+        posicion[0] = (a1.length - 1) - f;;
+        posicion[1] = (a1.length * 2) - ((a1.length - 1) - f);
         return posicion;
     }
 }
