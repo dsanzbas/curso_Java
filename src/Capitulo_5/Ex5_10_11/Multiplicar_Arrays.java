@@ -32,15 +32,17 @@ public class Multiplicar_Arrays {
             for (int j = (a1.length - 1); j >= 0; j-- ) {
                 multi = (a2[j] * a1[i]) + me_llevo;
                 me_llevo = 0;
-                dec_uni = decUni(multi);
+                if(multi >= 10) {
+                    dec_uni = decUni(multi);
+                }
                 me_llevo = dec_uni[0];
 
-                if (i == (a1.length - 1)) {
-                    matriz(dec_uni[1], i);
-                } else {
-                    pos_matriz = posMatriz(i,j);
-                    matriz(dec_uni[1], i);
-                }
+                //if (i == (a1.length - 1)) {
+                matriz(dec_uni[1], i,j);
+                //} else {
+                //    pos_matriz = posMatriz(i,j);
+                //    matriz(dec_uni[1], i,j);
+                //}
             }
         }
     }
@@ -64,8 +66,9 @@ public class Multiplicar_Arrays {
         return uniDec;
     }
     //Rellenar matriz
-    public void matriz (int valor, int i) {
-        resultado[(a1.length - 1) - i][((a1.length - 1) * 2) - ((a1.length - 1) - i)] = valor;
+    public void matriz (int valor, int i, int j) {
+        int l = a1.length;
+        resultado[(a1.length - 1) - i][((a1.length  * 2) - 1) - ((a1.length - 1) - j)] = valor;
     }
 
     //Determinar posición en la matriz
