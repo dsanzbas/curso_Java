@@ -5,15 +5,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.lang.*;
 
 public class Tabla_Multiplicar {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        Tabla_Multiplicar tm = new Tabla_Multiplicar();
+        String package_name = tm.getClass().getPackageName();
 
         try {
             System.out.println("Introducir un número entre el 1 y el 10: ");
             int intg = input.nextInt();
-            String dir = System.getProperty("user.dir") + "\\Ex6_1\\fichero1.txt";
+            String dir = System.getProperty("user.dir") + "\\" + package_name + "\\fichero1.txt";
             File file = new File(dir);
             File txt  = file.getParentFile();
 
@@ -26,7 +29,7 @@ public class Tabla_Multiplicar {
             String cadena_output;
             FileWriter output = new FileWriter(file);
             for (int i = 1; i <= 10; i++) {
-                cadena_output = i + " * " + intg + " = " + (i * intg);
+                cadena_output = i + " * " + intg + " = " + (i * intg) + "\n";
                 output.write(cadena_output);
             }
             output.close();
