@@ -16,7 +16,8 @@ public class Tabla_Multiplicar {
         try {
             System.out.println("Introducir un número entre el 1 y el 10: ");
             int intg = input.nextInt();
-            String dir = System.getProperty("user.dir") + "\\" + package_name + "\\fichero1.txt";
+            //String dir = System.getProperty("user.dir") + "\\" + package_name + "\\fichero1.txt";
+            String dir = System.getProperty("user.dir") + "\\fichero1.txt";
             File file = new File(dir);
             File txt  = file.getParentFile();
 

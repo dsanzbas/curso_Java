@@ -15,7 +15,8 @@ public class Trocear_Con_Buffer {
             System.out.println("Introducir un texto: ");
             StringTokenizer cadena = new StringTokenizer(br.readLine());
 
-            File file = new File("C:\\Users\\dsanzbas\\Desktop\\Ex6_1\\fichero.txt");
+            String dir = System.getProperty("user.dir") + "\\fichero.txt";
+            File file = new File(dir);
             File txt  = file.getParentFile();
 
             if (!txt.exists()) {
