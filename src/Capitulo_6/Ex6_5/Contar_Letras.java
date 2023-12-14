@@ -28,16 +28,23 @@ public class Contar_Letras {
             }
 
             String cadena_input;
+            int i = 0;
+            Contador bc = new Contador();
             FileReader input = new FileReader(file);
             BufferedReader bf = new BufferedReader(input);
-            while ((cadena_input = bf.readLine()) != null){
-                cadena_input.
+            while ((cadena_input = bf.readLine()) != null)
+            {
+                for(i=0; i < cadena_input.length(); i++)
+                {
+                    bc.buscarCaracter(cadena_input.charAt(i));
+                }
             }
-            output.close();
+            int[] total = bc.getTotal();
+            char[] abc  = bc.getAbc();
+            for (i=0; i < abc.length; i++) {
+                System.out.println("Nº veces letra " + abc[i] + " :" + total[i]);
+            }
 
-        } catch (InputMismatchException e) {
-            System.out.println("Formato numérico incorrecto");
-            input.nextLine();
         } catch (IOException e) {e.printStackTrace();}
     }
 }
