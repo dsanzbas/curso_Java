@@ -13,7 +13,7 @@ public class Trocear_Con_Buffer {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Introducir un texto: ");
-            StringTokenizer cadena = new StringTokenizer(br.readLine());
+            String cadena = br.readLine();
 
             String dir = System.getProperty("user.dir") + "\\fichero.txt";
             File file = new File(dir);
@@ -31,12 +31,9 @@ public class Trocear_Con_Buffer {
 
             String cadena_output;
             FileWriter output = new FileWriter(file);
+            cadena_output = cadena.replaceAll(" ", "\n");
+            output.write(cadena_output);
 
-            while (cadena.hasMoreTokens()) {
-                cadena_output = cadena.nextToken();
-                output.write(cadena_output);
-                output.write('\n');
-            }
             output.close();
 
         } catch (InputMismatchException e) {
