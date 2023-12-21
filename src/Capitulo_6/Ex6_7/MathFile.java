@@ -7,20 +7,24 @@ public class MathFile {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int op = 0;
+        int[] num = new int[];
+        Files f = new Files();
 
         System.out.println("1 - Introducir nuevos datos");
         System.out.println("2 - Leer datos del archivo");
 
-        try {
-            op = scanner.nextInt();
-        } catch (InputMismatchException e ) {e.printStackTrace();}
-
         switch (op) {
             case 1:
-                LeerDatos ld = new LeerDatos();
+                System.out.println("Introduzca 5 valores númericos");
+                try {
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Valor " + (i + 1) + ": " );
+                        num[i] = scanner.nextInt();
+                    }
+                } catch (InputMismatchException e) {e.printStackTrace();}
+                f.escribirFichero(num);
                 break;
             case 2:
-                IntroDatos id = new IntroDatos();
                 break;
             default:
                 LoggerClass lc = new LoggerClass();
