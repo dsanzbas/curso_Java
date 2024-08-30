@@ -29,6 +29,13 @@ public class MathFile {
                 f.escribirFichero(num);
                 break;
             case 2:
+                System.out.println("Leyendo el fichero...");
+                try {
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Valor " + (i + 1) + ": " );
+                        num.add(i, scanner.nextInt());
+                    }
+                } catch (InputMismatchException e) {e.printStackTrace();}
                 break;
             default:
                 LoggerClass lc = new LoggerClass();
