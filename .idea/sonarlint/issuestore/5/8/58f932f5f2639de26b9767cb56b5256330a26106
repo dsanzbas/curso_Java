@@ -1,0 +1,23 @@
+
+ˆ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëƒß¹J$7d0c04fe-935f-43dc-8d87-7bed8a893ab1
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ŞøİùÿÿÿÿJ$11394f52-8966-47a7-87c5-101fadeb273f
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šåñşÿÿÿÿJ$106abfcb-2378-4106-8c84-34723fbabfed
+“	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ›Á8ÌÓÆŠÇ1J$d9881610-e5d2-4e8c-a4dc-bd4141f0b6f9
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(í‡ÏAJ$95b2fe5a-0518-4997-b53b-02468e695a0d
+‹
+java:S2095!"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Å×Ôµ8üÓÆŠÇ1J$1eb81c10-69e9-4266-8cd5-8e80a296d9cd
+‡
+java:S1854"?Remove this useless assignment to local variable "dir_created".(„Ö†ªùÿÿÿÿ8üÓÆŠÇ1J$947ba0be-d500-48a0-8f9f-c3a208c25adb
+ƒ
+java:S1854"@Remove this useless assignment to local variable "file_created".(§ÚÎÑ8üÓÆŠÇ1J$4a20ed22-5193-4af2-b2d8-766ab9918274
+q
+java:S1481"0Remove this unused "dir_created" local variable.(’ŞøİùÿÿÿÿJ$a5e446aa-ecfc-4227-9d21-23921f562c9e
+r
+java:S1481"1Remove this unused "file_created" local variable.(šåñşÿÿÿÿJ$e7256f71-12a6-4a8a-8093-2b6c7f5ef35b
+k	java:S106"+Replace this use of System.out by a logger.(œË£øÿÿÿÿJ$540621b6-345b-4dca-857d-8a49f9f3290d
+~	java:S125"<This block of commented-out lines of code should be removed.(Ï×Õ‹8‹ÔÆŠÇ1J$ea1a54ef-37ec-4c2e-b4cb-4014c534333b
+‹
+java:S5361""HReplace this call to "replaceAll()" by a call to the "replace()" method.(š€Ú 8«ÔÆŠÇ1J$e24574f8-bdc3-4fc0-9d87-b9e9baa4e9d7
+f	java:S106("+Replace this use of System.out by a logger.(ÂØ“øJ$be38a8b7-322d-4681-9f5a-b914527addbc
+~
+java:S1128"6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ8¸ÔÆŠÇ1J$d08ddcaf-4e99-419f-930e-6a0e1b3ec9d5

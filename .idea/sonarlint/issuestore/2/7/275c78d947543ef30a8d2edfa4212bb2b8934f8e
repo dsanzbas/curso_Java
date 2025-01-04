@@ -1,0 +1,20 @@
+
+ˆ	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óåÿ°J$c6d04eae-2be6-4067-91ef-711d905640ba
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉèšíùÿÿÿÿJ$a31d29e8-06fb-46d0-b701-107da62362e6
+Œ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ›ÁJ$1b0ab46a-1438-4ca6-a9d5-cce0aaef0674
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó½Ò®ûÿÿÿÿJ$734be4af-b06c-4d06-9ac8-57fb6762b56f
+„
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Å×ÔµJ$3b6f2574-76e9-46b1-adb4-a7b7d8563772
+’
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ãø©ÆşÿÿÿÿJ$0a1d0064-f6ab-469c-aefc-cb6713ca15fb
+
+java:S1854"@Remove this useless assignment to local variable "package_name".(ÉèšíùÿÿÿÿJ$54cce68a-3365-4d2a-a9b4-d60fa4b9e229
+Œ
+java:S2133"KRemove this object instantiation and use "Tabla_Multiplicar.class" instead.(Üµ÷¯øÿÿÿÿJ$25fab9c4-a6dc-4738-a855-6e2122fb0672
+r
+java:S1481"1Remove this unused "package_name" local variable.(ÉèšíùÿÿÿÿJ$80621024-bf2a-4220-b8a7-58e67115b715
+k	java:S106"+Replace this use of System.out by a logger.(³ÏƒæıÿÿÿÿJ$1bb0792d-e0a8-4ccb-b9e8-0be0e701f9d9
+|	java:S125"<This block of commented-out lines of code should be removed.(çÄõÙøÿÿÿÿJ$1e9a2d90-bd09-4fd7-b6d3-2a9cdff2390a
+‚	java:S899"BDo something with the "boolean" value returned by "createNewFile".(Ğ’ÍùÿÿÿÿJ$eb03f490-d5c4-49d4-a7cc-4dd034b54c20
+f	java:S106'"+Replace this use of System.out by a logger.(ÂØ“øJ$5efcafe0-9d22-4b72-840a-ef34079bea91
